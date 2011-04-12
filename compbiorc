@@ -1,0 +1,50 @@
+export TACC_COMPBIO=$WORK/home
+
+TACC_PATH=${TACC_COMPBIO}/bin
+
+# Java JDK
+export JAVA_HOME=${TACC_COMPBIO}/java/jdk1.6.0_24/bin/java
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/java/jdk1.6.0_24/bin
+
+# Specific applications
+
+# IRODS (current)
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/icommands/bin
+
+#RepeatMasker
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/RepeatMasker
+
+#RMBlast rmblast-1.2-ncbi-blast-2.2.23
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/rmblast-1.2-ncbi-blast-2.2.23+/bin
+
+#TandemRepeatsFinder 4.04
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/TandemRepeatsFinder
+
+#NCBI BLAST ncbi-blast-2.2.24
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/ncbi-blast-2.2.24/bin
+
+#Primer3_core (libprimer3 release 2.2.3)
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/primer3
+
+# Bowtie
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/bowtie-0.12.7
+
+# Bismarck
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/bismark_v0.4.1
+
+#Aspera
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/.aspera/connect/bin
+
+#SRA Toolkit
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/sratoolkit
+
+# Extend PATH with TACC_PATH
+PATH=${PATH}:$TACC_PATH
+# Extend LD_LIBRARY_PATH with $TACC_COMPBIO
+LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${TACC_COMPBIO}/lib
+
+# Finally, push out into @ENV
+export PATH
+export LD_LIBRARY_PATH
+
+echo "Compbiorc loaded"
