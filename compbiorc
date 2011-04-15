@@ -29,7 +29,7 @@ TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/java/jdk1.6.0_24/bin
 # Specific applications
 
 # IRODS (current)
-TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/icommands/bin
+# TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/icommands/bin
 
 #RepeatMasker
 TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/RepeatMasker
