@@ -28,6 +28,10 @@ TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/java/jdk1.6.0_24/bin
 
 # Specific applications
 
+# SAMTools
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/samtools-0.1.17
+export SAMTOOLS=${TACC_COMPBIO}/bin/samtools-0.1.17
+
 # IRODS (current)
 # TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/icommands/bin
 
