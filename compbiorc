@@ -27,6 +27,9 @@ export JAVA_HOME=${TACC_COMPBIO}/java/jdk1.6.0_24/bin/java
 TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/java/jdk1.6.0_24/bin
 
 # Specific applications
+# IGVTools
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/IGVTools
+export IGVTOOLS=${TACC_COMPBIO}/bin/IGVTools
 
 # SAMTools
 TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/samtools-0.1.17
