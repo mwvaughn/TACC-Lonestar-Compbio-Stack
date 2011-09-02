@@ -56,6 +56,10 @@ TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/primer3
 # Bowtie
 TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/bowtie-0.12.7
 
+# TopHat and Cufflinks
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/cufflinks-1.0.3.Linux_x86_64
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/tophat-1.3.1.Linux_x86_64
+
 # Bismarck
 TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/bismark_v0.4.1
 
