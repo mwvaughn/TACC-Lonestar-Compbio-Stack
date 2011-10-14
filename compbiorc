@@ -38,6 +38,9 @@ export SAMTOOLS=${TACC_COMPBIO}/bin/samtools-0.1.17
 # Velvet (OpenMP + ICC)
 TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/velvet-1.1.06
 export VELVET=${TACC_COMPBIO}/bin/velvet-1.1.06
+# Oases
+TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/oases
+export OASES=${TACC_COMPBIO}/bin/oases
 
 # IRODS (current)
 # TACC_PATH=$TACC_PATH:${TACC_COMPBIO}/bin/icommands/bin
